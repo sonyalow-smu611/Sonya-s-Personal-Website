@@ -1,0 +1,75 @@
+/* Mirrors the "sonya's space Design System" tokens.json. Change values there first, then here. */
+
+/* Goji loads only if installed locally until the font files are added. */
+@font-face { font-family: 'Goji'; src: local('Goji ExtraBold'), local('Goji-ExtraBold'); font-weight: 800; font-display: swap; }
+
+:root {
+  --tile-pink: #F7DCD8;
+  --tile-grout: #EDC3BE;
+  --paper: #FFF9F0;
+  --sign-cream: #F6E7B8;
+  --ink: #1F3A2B;
+  --ink-muted: #4F6157;
+  --basket-green: #5DA562;
+  --basket-deep: #2F6B3A;
+  --tomato: #E0533D;
+  --tomato-text: #C7412C; /* tomato darkened to pass 4.5:1 on paper */
+  --banana: #F2C94C;
+  --milk-blue: #CFE3F2;
+  --eggplant: #6B4E8C;
+  --chalkboard: #2E3A34;
+  --chalk: #F5F1E6;
+  --wood: #C99A5B;
+  --belt: #3B3B3D;
+  --roller: #8A8A8E;
+
+  --font-display: 'Lora', Georgia, serif;
+  --font-heading: Georgia, 'Times New Roman', serif;
+  --font-body: 'Goji', 'Nunito', system-ui, sans-serif;
+  --font-receipt: 'Courier Prime', 'Courier New', monospace;
+
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 40px;
+  --space-5: 64px;
+
+  --radius-sign: 8px;
+  --radius-card: 18px;
+  --radius-basket: 28px;
+  --radius-pill: 999px;
+
+  --shadow-doodle: 3px 4px 0 var(--ink);
+  --shadow-box: 6px 8px 0 var(--ink);
+
+  /* Bootstrap hooks */
+  --bs-body-font-family: var(--font-body);
+  --bs-body-font-weight: 800;
+  --bs-body-color: var(--ink);
+  --bs-body-bg: var(--tile-pink);
+  --bs-link-color-rgb: 31, 58, 43;
+  --bs-link-hover-color-rgb: 47, 107, 58;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--tile-pink);
+  background-image:
+    linear-gradient(var(--tile-grout) 2px, transparent 2px),
+    linear-gradient(90deg, var(--tile-grout) 2px, transparent 2px);
+  background-size: var(--space-4) var(--space-4);
+}
+
+.font-display { font-family: var(--font-display); font-weight: 700; }
+h1, h2, h3, h4, h5, h6 { font-family: var(--font-heading); }
+
+.shop-box {
+  background: var(--paper);
+  border: 4px solid var(--ink);
+  border-radius: var(--radius-basket);
+  box-shadow: var(--shadow-box);
+}
+
+/* Stickers: pure decoration, never in the way of a click */
+.sticker { position: absolute; z-index: 3; pointer-events: none; }
