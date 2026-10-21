@@ -104,7 +104,7 @@ export const baskets = [
         title: "Head of AI Lodge Programme",
         meta: "BIA Club · Jan 2026 – Jun 2027",
         body: "Led a programme on ML, RAG, AI agents, red teaming and deployment. Recruited 70 from 200+ applicants, worked with 20+ mentors, 70+ AI projects completed.",
-        links: [],
+        links: [{ label: "LinkedIn", href: "https://lnkd.in/p/gfdR8jEf" }],
         sticker: "promotion",
       },
       {
@@ -132,7 +132,7 @@ export const baskets = [
         title: "Fintech Innovators Hackathon — 3rd of 200",
         meta: "Mar 2026",
         body: "Macroeconomic news intelligence platform: HeatScore ranking, D3 associations graph, RAG chat assistant.",
-        links: ["https://lnkd.in/p/g7WZ3ZW5"],
+        links: [{ label: "LinkedIn", href: "https://lnkd.in/p/g7WZ3ZW5" }],
       },
       {
         name: "Batteries",
@@ -141,7 +141,7 @@ export const baskets = [
         title: "Jane Street WiSE Programme",
         meta: "Hong Kong · Jul 2025",
         body: "Selected from a cohort of 70+ women in STEM; trading and risk-management strategy with Jane Street traders.",
-        links: ["https://lnkd.in/p/g2xvPhEg"],
+        links: [{ label: "LinkedIn", href: "https://lnkd.in/p/g2xvPhEg" }],
       },
     ],
   },
@@ -159,6 +159,7 @@ export const baskets = [
         meta: "Next.js · Express · React · PostgreSQL · May – Jul 2026",
         body: "Full-stack app with a decoupled REST API, live status aggregation and LLM-ranked recommendations.",
         links: [
+          { label: "Live site", href: "https://hoppers2-0.vercel.app/" },
           { label: "Devpost", href: "https://devpost.com/software/hoppers" },
         ],
       },
@@ -166,10 +167,15 @@ export const baskets = [
         name: "Cookies",
         art: "cookies",
         image: null,
-        title: "Roommate Finder",
-        meta: "MERN · Feb – Apr 2026",
-        body: "MVC Express + MongoDB app with RESTful routing and session-based auth guards.",
-        links: ["https://github.com/sonyalow-smu611/Roommate_Finder"],
+        title: "Notion MCP Telegram agent",
+        meta: "Node.js · OpenAI Agents SDK · Notion MCP · Vercel · Upstash Redis",
+        body: "Telegram assistant that saves tasks, expenses, events and links to Notion; a triage agent routes each message to specialists with validated tools.",
+        links: [
+          {
+            label: "GitHub",
+            href: "https://github.com/sonyalow-smu611/notion-assistant-telebot",
+          },
+        ],
       },
       {
         name: "Chocolate bar",
@@ -182,6 +188,10 @@ export const baskets = [
           {
             label: "Devpost",
             href: "https://devpost.com/software/learnactively",
+          },
+          {
+            label: "GitHub",
+            href: "https://github.com/sonyalow-smu611/LearnActively",
           },
         ],
       },
@@ -196,6 +206,10 @@ export const baskets = [
           {
             label: "GitHub",
             href: "https://github.com/sonyalow-smu611/Langchain-Agent-Workflow/tree/main/example%20langchain%20agents/vibecoder",
+          },
+          {
+            label: "GitHub (Chingu)",
+            href: "https://github.com/sonyalow-smu611/Chingu",
           },
         ],
       },

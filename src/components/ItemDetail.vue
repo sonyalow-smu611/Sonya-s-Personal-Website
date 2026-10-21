@@ -9,7 +9,6 @@ const links = computed(() => props.item.links.filter((l) => l.href)) // no URL y
   <article class="item-detail">
     <div class="detail-head">
       <span class="font-display">Scanned item</span>
-      <span class="detail-name">{{ item.name }}</span>
     </div>
     <img v-if="item.image" class="detail-image" :src="`/photos/${item.image}`" :alt="item.title" />
     <h3 class="detail-title">{{ item.title }}</h3>
@@ -24,7 +23,6 @@ const links = computed(() => props.item.links.filter((l) => l.href)) // no URL y
 <style scoped>
 .item-detail { display: flex; flex-direction: column; gap: 14px; }
 .detail-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding-bottom: 12px; border-bottom: 3px dashed var(--ink-muted); font-size: 24px; }
-.detail-name { font-size: 13px; color: var(--ink-muted); }
 /* whole photo, never cropped; tall ones are capped and centred */
 .detail-image { width: 100%; height: auto; max-height: 520px; object-fit: contain; background: #fff; border: 3px solid var(--ink); border-radius: var(--radius-sign); }
 .detail-title { margin: 0; font-size: 24px; line-height: 1.25; }

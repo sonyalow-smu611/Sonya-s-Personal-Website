@@ -35,8 +35,8 @@ function pick(i) {
               <img v-if="item.sticker" class="sticker item-sticker" :src="`/stickers/${item.sticker}.webp`" alt="" aria-hidden="true" />
               <img v-if="item.art" class="item-art item-photo" :src="`/items/${item.art}.webp`" alt="" aria-hidden="true" />
               <span v-else class="item-art" aria-hidden="true"></span>
-              <span class="font-display item-name">{{ item.name }}</span>
-              <span class="item-title">{{ item.title }}</span>
+              <span class="font-display item-title">{{ item.title }}</span>
+              <span class="item-meta">{{ item.meta }}</span>
               <span v-if="i === picked" class="item-tag">scanned</span>
             </button>
           </li>
@@ -100,8 +100,8 @@ function pick(i) {
 .item-sticker { top: -26px; right: -20px; width: 92px; transform: rotate(9deg); }
 .item-art { width: 72px; height: 72px; border: 3px dashed var(--ink-muted); border-radius: var(--radius-pill); background: var(--tile-pink); }
 .item-photo { border: none; border-radius: 0; background: none; object-fit: contain; }
-.item-name { font-size: 20px; line-height: 1.1; }
-.item-title { font-size: 12px; line-height: 1.4; color: var(--ink-muted); }
+.item-title { font-size: 17px; line-height: 1.15; }
+.item-meta { font-size: 12px; line-height: 1.4; color: var(--ink-muted); }
 .item-tag { padding: 1px 10px; border: 3px solid var(--tomato); border-radius: var(--radius-pill); font-size: 12px; }
 .detail-panel {
   flex: 1 1 360px;
